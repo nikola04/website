@@ -4,8 +4,8 @@ export default function About() {
       <section className="py-6">
         <h1 className="tracking-wider font-bold text-gray dark:text-white text-2xl">About Me</h1>
         <div className="py-3">
-          <p className="py-2 px-2">Hello, my name is Nikola Nedeljković and I'm a Full Stack Developer with a deep passion for coding. <br/>Currently, I'm studying software engineering and working on web projects in my spare time.<br/>I continuously practice and learn new technologies to enhance my skills.</p>
-          <p className="py-2 px-2">My native language is Serbian, and I'm fluent in English.</p>
+          <p className="py-2 px-2">Hello, my name is Nikola Nedeljković and I&apos;m a Full Stack Developer with a deep passion for coding. <br/>Currently, I&apos;m studying software engineering and working on web projects in my spare time.<br/>I continuously practice and learn new technologies to enhance my skills.</p>
+          <p className="py-2 px-2">My native language is Serbian, and I&apos;m fluent in English.</p>
         </div>
         <h1 className="tracking-wider font-bold text-gray dark:text-white text-2xl pt-6">Skills</h1>
         <div className="py-3">

@@ -1,7 +1,7 @@
 import Project from "@/components/project";
 import { projects } from "@/data/projects";
 import { skills, SkillType } from "@/data/skills";
-import TypingHeading from './typingHeading'
+import Image from "next/image";
 import Link from "next/link";
 
 const projectsToDisplay = ['GetInsta', 'NxCloud', 'Portfolio']
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="py-14 flex flex-col">
       <section className="py-6 w-full max-w-screen-sm min-h-33-svh">
-        <h1 className={`tracking-wider font-bold text-gray dark:text-white text-4xl`}>Hello, I'm Nikola 👋</h1>
+        <h1 className={`tracking-wider font-bold text-gray dark:text-white text-4xl`}>Hello, I&apos;m Nikola 👋</h1>
         <p className="py-6">a Full Stack Developer with a deep passion for coding. <br/>Currently, I am studying software engineering and working on web projects in my free time. 🍸</p>
         <Button name="About Page" text="Read More" href="/about" />
       </section>
@@ -54,6 +54,6 @@ function Skill({ skill }: {
 }){
   const border = "border-2 border-[" + skill.color + "]"
   return <div className={`w-16 h-16 m-1 rounded-md overflow-hidden flex items-center justify-center select-none ${skill.outline && border}`}>
-    <img className="max-w-full max-h-full" src={skill.image} alt={skill.name} />
+    <Image className="max-w-full max-h-full" src={skill.image} alt={skill.name} />
   </div>
 }

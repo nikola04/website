@@ -10,6 +10,6 @@ export default function ShowWithDelay({ children, delay }: Readonly<{
     useEffect(() => {
         const timeout = setTimeout(() => setShown(true), delay)
         return () => timeout && clearTimeout(timeout)
-    }, [])
+    }, [delay])
     return <div className={`opacity-0 transition-all ${ shown && 'opacity-100'}`}>{ children }</div>
 }

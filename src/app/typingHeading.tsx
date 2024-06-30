@@ -1,4 +1,6 @@
 'use client'
 import { ReactTyped } from "react-typed";
 
-export default ({ text }: { text: string }) => <ReactTyped strings={[text]} typeSpeed={60} />
+export default function TypingHeading({ text }: { text: string }) {
+    return <ReactTyped strings={[text]} typeSpeed={60} /> 
+}
